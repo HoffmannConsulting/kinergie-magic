@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "kinergie-magic",
+  "owner": {
+    "name": "KInergie / Ben Hoffmann"
+  },
+  "plugins": [
+    {
+      "name": "kinergie-magic",
+      "source": "./kinergie-magic",
+      "description": "Das KInergie-Betriebssystem: sechs gefuehrte Skills, von der Brand- und Angebots-DNA ueber Landing-Page, Webinar, Werbeanzeigen und Instagram bis E-Mail-Marketing. Maximal gefuehrt, auch ganz ohne Technik-Vorwissen."
+    }
+  ]
+}
