@@ -1,6 +1,6 @@
 ---
 name: kinergie-reise
-description: Master-Begleiter-Skill der KInergie Magic. Aktiviert mit dem Satz "Lass meine KInergie-Reise starten." Fuehrt die Kundin Schritt fuer Schritt durch ihre komplette Brand-Entwicklung. Vom Material-Sammeln ueber Vision-Klarheit, Angebots-DNA bis zur fertigen Brand-Voice-DNA mit mindestens 15 Frustrationen der Zielgruppe. Speichert Ergebnisse als MD-Dateien im Kundinnen-Ordner (brand-voice-dna.md, interne-angebots-dna.md, brand-story-archiv.md). Im naechsten Schritt baut die Kundin ihr KI-Agenten-Team mit einem separaten Begleiter auf. Reagiert auf jede Antwort als warmer Mentor mit Spiegelung, Anerkennung und magischem Wow-Moment. Pausierbar. Dauer 60 bis 90 Minuten.
+description: Master-Begleiter-Skill der KInergie Magic. Aktiviert mit dem Satz "Lass meine KInergie-Reise starten." Fuehrt die Kundin Schritt fuer Schritt durch ihre komplette Brand-Entwicklung. Vom Material-Sammeln ueber Vision-Klarheit, Angebots-DNA bis zur fertigen Brand-Voice-DNA mit mindestens 15 Frustrationen der Zielgruppe. Speichert Ergebnisse als MD-Dateien im Kundinnen-Ordner (brand-voice-dna.md, interne-angebots-dna.md, brand-story-archiv.md) und zusaetzlich eine gebuendelte Datei meine-brand-dna.md. Am Ende laedt die Kundin ihre fertige Brand-DNA in SULINA hoch. Reagiert auf jede Antwort als warmer Mentor mit Spiegelung, Anerkennung und magischem Wow-Moment. Pausierbar. Dauer 60 bis 90 Minuten.
 type: skill
 order: 1
 trigger: "Lass meine KInergie-Reise starten."
@@ -1247,7 +1247,7 @@ Der Begleiter nutzt das Material aus Phase 2 als Basis und ergänzt durch Fragen
 - Welche Schriftarten nutzt du in deiner Marke? Sans-Serif (Inter, Helvetica, Montserrat)? Serif (Playfair)? Handwritten? Mix?
 - Falls keine Vorstellung: Begleiter schlägt 2 bis 3 Varianten passend zum visuellen Stil aus 5m vor.
 
-(Wichtige Klarstellung: die Blöcke "Bildwelt POSITIV", "Bildwelt NEGATIV" und "Sound" entfallen in der KInergie-Reise. Die Pipeline-Agentinnen generieren keine AI-Bilder und keine Videos. Stella nutzt echte Fotos, die die Kundin später beim KI-Agenten-Aufbau in ihre Bilder-Galerie hochlädt. Mia nutzt Placid-Karussell-Templates mit festem Layout. Eine separate Bildwelt-Beschreibung oder Sound-Auswahl bringt der Pipeline keinen Nutzen. TEIL 9.4, 9.5 und 10 bleiben optional und nicht-Pflicht.)
+(Wichtige Klarstellung: die Blöcke "Bildwelt POSITIV", "Bildwelt NEGATIV" und "Sound" entfallen in der KInergie-Reise. Die Pipeline-Agentinnen generieren keine AI-Bilder und keine Videos. Stella nutzt echte Fotos, die die Kundin später in SULINA in ihre Bilder-Galerie hochlädt. Mia nutzt Placid-Karussell-Templates mit festem Layout. Eine separate Bildwelt-Beschreibung oder Sound-Auswahl bringt der Pipeline keinen Nutzen. TEIL 9.4, 9.5 und 10 bleiben optional und nicht-Pflicht.)
 
 **Block 5r: Marken-Persönlichkeit (TEIL 6.1, 6.2)**
 
@@ -1350,13 +1350,13 @@ echten Stimme sein wird.
 Atme einmal tief durch. Spürst du das? Das ist deine 
 Brand-DNA.
 
-Ich speichere dir jetzt zwei fertige Dateien direkt 
+Ich speichere dir jetzt deine fertigen Dateien direkt 
 in deinen Projekt-Ordner. Du musst nichts kopieren.
 
 Bereit?
 ```
 
-Warte auf Bestätigung. Dann legt der Begleiter die zwei MD-Dateien mit dem Write-Tool im Kundinnen-Ordner an (`brand-voice-dna.md` und `interne-angebots-dna.md`). Falls persönliche Lebensgeschichten kamen, zusätzlich `brand-story-archiv.md`.
+Warte auf Bestätigung. Dann legt der Begleiter die MD-Dateien mit dem Write-Tool im Kundinnen-Ordner an (`brand-voice-dna.md` und `interne-angebots-dna.md`). Falls persönliche Lebensgeschichten kamen, zusätzlich `brand-story-archiv.md`. Zusätzlich erzeugt der Begleiter IMMER eine gebündelte Datei `meine-brand-dna.md` (siehe Punkt 4 unten). Das ist die EINE Datei, die die Kundin später in SULINA hochlädt.
 
 **1. Brand-Voice-DNA-MD-Datei (`brand-voice-dna.md` im Kundinnen-Ordner):**
 
@@ -1483,7 +1483,7 @@ Niemals Stories, Zitate, Namen, Reaktionen, Betraege oder Zwischenschritte erfin
 [falls bekannt]
 
 ### 9.4 Bildwelt POSITIV
-Für die Pipeline nicht relevant. Stella nutzt echte Fotos aus der Bilder-Galerie, die die Kundin später im KI-Agenten-Aufbau anlegt. Die Bildauswahl ist physisch, nicht beschriebend.
+Für die Pipeline nicht relevant. Stella nutzt echte Fotos aus der Bilder-Galerie, die die Kundin später in SULINA anlegt. Die Bildauswahl ist physisch, nicht beschriebend.
 
 ### 9.5 Bildwelt NEGATIV
 Für die Pipeline nicht relevant. Siehe 9.4.
@@ -1627,30 +1627,57 @@ Wann passend: [z.B. Webinar-Eröffnung, Sales-Page-Intro, Mail-Sequenz Tag 1]
 Wann passend: [...]
 ```
 
+**4. Gebündelte Upload-Datei (`meine-brand-dna.md` im Kundinnen-Ordner, IMMER erzeugen):**
+
+Zusätzlich zu den drei Einzeldateien erzeugt der Begleiter IMMER eine vierte, gebündelte Datei mit dem Namen `meine-brand-dna.md`. Sie fasst die komplette Brand-Voice-DNA UND die Interne Angebots-DNA in EINER Datei zusammen, jeweils unter einer klaren großen Überschrift. So erkennt SULINA beide Teile sauber. Das Brand-Story-Archiv kommt hier NICHT mit rein (es ist nur für Webinar, Landing-Page und Sales gedacht, nicht für die tägliche Pipeline).
+
+Diese eine Datei `meine-brand-dna.md` ist die Datei, die die Kundin später in SULINA hochlädt. Die drei Einzeldateien bleiben zusätzlich erhalten.
+
+Aufbau der Datei (der Begleiter setzt unter TEIL A den kompletten Inhalt aus `brand-voice-dna.md` ein und unter TEIL B den kompletten Inhalt aus `interne-angebots-dna.md`):
+
+```markdown
+# TEIL A: BRAND-VOICE-DNA
+
+[hier 1:1 der komplette Inhalt von brand-voice-dna.md, von TEIL 1 bis TEIL 18.5]
+
+---
+
+# TEIL B: ANGEBOTS-DNA
+
+[hier 1:1 der komplette Inhalt von interne-angebots-dna.md]
+```
+
 **Abschluss-Anweisung an die Kundin:**
 
 ```
-Beide DNAs sind fertig und liegen jetzt in deinem 
+Deine DNAs sind fertig und liegen jetzt in deinem 
 Projekt-Ordner:
 
 - brand-voice-dna.md
 - interne-angebots-dna.md
 - brand-story-archiv.md (nur falls du Geschichten erzaehlt hast)
+- meine-brand-dna.md (deine gebuendelte Datei fuer SULINA)
 
 Du hast es geschafft. Du hast jetzt ALLES was deine 
-Marke ausmacht in diesen Dateien zusammengetragen.
+Marke ausmacht in diesen Dateien zusammengetragen. 
+Sei stolz auf dich. Das hier ist ein echtes Fundament.
 
-Wenn du bereit bist für den nächsten Schritt, dein 
-eigenes KI-Agenten-Team aufbauen, das deinen Content 
-in deiner Stimme produziert, sag mir Bescheid mit:
+Eine Sache merk dir gut: die Datei meine-brand-dna.md 
+ist deine wichtige Datei. In ihr stecken deine 
+Brand-Voice-DNA und deine Angebots-DNA zusammen in 
+einer einzigen Datei.
 
-"Lass mich mein KI-Agenten-Team aufbauen."
+Genau diese eine Datei laedst du spaeter in SULINA hoch, 
+sobald SULINA dich nach deiner Marke fragt. Das ist ganz 
+einfach: ein Klick auf "Hochladen", die Datei 
+meine-brand-dna.md auswaehlen, fertig. SULINA liest dann 
+alles automatisch aus.
 
-Das startet den nächsten Begleiter. Heute kannst du 
-aber auch erstmal Pause machen. Du hast genug geschafft.
+Heute hast du genug geschafft. Lehn dich zurueck und 
+genieß den Moment.
 ```
 
-Der Begleiter schreibt dann via Write-Tool die MD-Dateien in den Kundinnen-Ordner.
+Der Begleiter schreibt dann via Write-Tool die MD-Dateien in den Kundinnen-Ordner (die drei Einzeldateien plus `meine-brand-dna.md`).
 
 **Wow-Abschluss:**
 
@@ -1666,27 +1693,29 @@ Sales-Page entstehen kann.
 Lehn dich kurz zurück. Spürst du das? Das ist deine 
 Marke. Du hast sie gerade auf das Papier gebracht.
 
-Wann immer du bereit bist für den nächsten Schritt 
-(dein KI-Agenten-Team aufbauen), schreib mir einfach:
+Und das Schönste: alles steckt fertig in deiner Datei 
+meine-brand-dna.md. Wenn SULINA dich das nächste Mal 
+nach deiner Marke fragt, lädst du genau diese eine Datei 
+hoch und SULINA kennt dich sofort. Ein Klick, und deine 
+Marke ist drin.
 
-"Lass mich mein KI-Agenten-Team aufbauen."
-
-Ich bin da.
+Du hast heute genug geschafft. Ich bin stolz auf dich.
 ```
 
 ---
 
 ## MD-Datei-Output
 
-Der Begleiter erzeugt drei MD-Dateien im Kundinnen-Ordner:
+Der Begleiter erzeugt vier MD-Dateien im Kundinnen-Ordner:
 
 - `brand-voice-dna.md`, strukturiert nach TEIL 1 bis TEIL 18.5 (siehe Output-Struktur unten)
 - `interne-angebots-dna.md`, Sales-relevante Infos (NICHT von Pipeline gelesen)
 - `brand-story-archiv.md`, nur wenn Lebensgeschichten erzaehlt wurden
+- `meine-brand-dna.md`, die gebündelte Datei (TEIL A Brand-Voice-DNA plus TEIL B Angebots-DNA in einer Datei). Das ist die Datei, die die Kundin später in SULINA hochlädt.
 
-Die spätere automatische Übertragung dieser MD-Dateien in das KI-Agenten-Setup übernimmt der nachfolgende Begleiter (Skill 08 KI-Agenten-Aufbau). In der KInergie-Reise selbst wird nichts ausser den drei MD-Dateien erzeugt.
+Die drei Einzeldateien bleiben für interne Nutzung erhalten. Die gebündelte `meine-brand-dna.md` ist die eine Datei für den SULINA-Upload. In der KInergie-Reise selbst wird nichts ausser diesen MD-Dateien erzeugt.
 
-**Wichtig:** Die Brand-Voice-DNA-MD muss dieselbe TEIL-Struktur haben wie das spätere Setup (TEIL 1.2 bis TEIL 18.5). Damit die automatische Übertragung sauber laufen kann.
+**Wichtig:** Die Brand-Voice-DNA-MD muss dieselbe TEIL-Struktur haben (TEIL 1.2 bis TEIL 18.5), damit SULINA die Inhalte sauber auslesen kann.
 
 ---
 
@@ -1730,29 +1759,34 @@ mir gern noch einen Screenshot.
 
 ---
 
-## Übergabe an den nächsten Skill
+## Abschluss und SULINA-Upload
 
-Nach Abschluss der DNA-Reise verweist der Begleiter auf den nächsten Skill: `KI-Agenten-Aufbau`. Dieser baut auf der gerade fertigen Brand-Voice-DNA auf.
+Nach Abschluss der DNA-Reise feiert der Begleiter die Kundin und weist sie auf den letzten, leichten Schritt hin: ihre fertige Brand-DNA in SULINA hochladen.
 
-Der Übergabe-Prompt lautet:
+Der Abschluss-Prompt lautet:
 
 ```
-Wann immer du bereit bist für deinen nächsten Schritt: 
-dein eigenes KI-Agenten-Team aufbauen.
+Du hast es geschafft. Deine komplette Brand-DNA liegt 
+fertig in deinem Projekt-Ordner.
 
-Dafür gibt es einen eigenen Begleiter in diesem Plugin. 
-Du startest ihn mit dem Satz:
+Das Wichtigste für dich ist die Datei meine-brand-dna.md. 
+Da steckt alles drin: deine Brand-Voice-DNA und deine 
+Angebots-DNA in einer einzigen Datei.
 
-Lass mich mein KI-Agenten-Team aufbauen.
+Wenn SULINA dich nach deiner Marke fragt, lädst du genau 
+diese eine Datei hoch. Ein Klick auf "Hochladen", die 
+Datei meine-brand-dna.md auswählen, fertig. SULINA kennt 
+dich dann sofort.
 
-Aber heute nicht mehr. Heute hast du genug geschafft.
+Aber heute nicht mehr nötig. Heute hast du genug 
+geschafft. Sei stolz auf dich.
 ```
 
 ---
 
 ## Verbindung zur Pipeline (n8n)
 
-Die fertige Brand-Voice-DNA wird später vom KI-Agenten-Aufbau in das Setup übertragen und steht dann der Pipeline zur Verfügung. Die Interne Angebots-DNA bleibt absichtlich getrennt und wird NICHT von der Pipeline gelesen, damit kein Programm-Pitch in die täglichen Posts rutscht.
+Die fertige Brand-Voice-DNA lädt die Kundin später über die Datei `meine-brand-dna.md` in SULINA hoch und steht dann der Pipeline zur Verfügung. Die Interne Angebots-DNA ist in `meine-brand-dna.md` bewusst als eigener Teil (TEIL B) abgetrennt und wird NICHT von der Pipeline gelesen, damit kein Programm-Pitch in die täglichen Posts rutscht.
 
 ---
 
@@ -1768,6 +1802,6 @@ Was sich gegenüber v1.1 geändert hat:
 - Drei-Avatare-Block verdichtet aus den vorhandenen Antworten 5a bis 5h, keine neue Zielgruppen-Abfrage.
 - Marke IST NICHT und Tonalitäts-Regeln aus Tabu-Themen 5l und Voice 5j abgeleitet, keine Doppel-Abfrage.
 - Regel 4a (NEU): wenn die Kundin nicht weiterweiß, niemals abnicken, sondern aktiv mit Mini-Folgefragen hinführen.
-- Output-MD-Heading-Strings exakt zur Setup-Struktur angeglichen, damit die spätere automatische Übertragung im KI-Agenten-Aufbau sauber laufen kann.
+- Output-MD-Heading-Strings exakt zur Setup-Struktur angeglichen, damit SULINA die Inhalte beim Upload sauber auslesen kann.
 - Standard-Texte für TEIL 13 (KI-Agentinnen-Familie) und TEIL 17 (Arbeitsregeln) vollständig im Output, damit später nichts überschrieben oder mit Platzhaltern befüllt wird.
-- Klarer Übergang zum nächsten Begleiter (Skill 08 KI-Agenten-Aufbau, Trigger "Lass mich mein KI-Agenten-Team aufbauen").
+- Abschluss mit Hinweis auf SULINA-Upload: gebündelte Datei meine-brand-dna.md (TEIL A Brand-Voice-DNA plus TEIL B Angebots-DNA), die die Kundin in SULINA hochlädt.
